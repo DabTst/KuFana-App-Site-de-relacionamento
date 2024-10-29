@@ -1,38 +1,285 @@
-.App {
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  background: linear-gradient(#ff8a00, #e52e71);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+}
+
+.Home {
+  display: flex;
+  justify-content: space-around;
+  height: 13vh;
+  background-color: #63122f;
+  width: 100%;
+  box-shadow: 4px 4px 2px #000;
+}
+
+.Menu {
+  padding-top: 2%;
+}
+
+.Menu a {
+  padding: 2rem;
+  transition: all ease-in-out;
+}
+
+.Menu a:hover {
+  color: rgb(240, 70, 175);
+  font-size: 17px;
+}
+
+.Home1 {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  margin-top: 2%;
+}
+
+.Home1-1 h4 {
+  font-size: 3em;
+}
+
+.Home1-1 h6 {
+  font-size: 1.5em;
+}
+
+/*Login*/
+
+.Login {
+  width: 100%;
+}
+.Login h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.LoginForm {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1%;
+  border: 1px solid #fff;
+  width: 350px;
+  height: 295px;
+  top: 30%;
+  left: 35%;
+  position: absolute;
+  text-align: left;
+  background-color: #fff;
+  align-items: flex-start;
+  border-radius: 5%;
+  box-shadow: 2px 2px 4px #000;
 }
 
-.App-link {
-  color: #61dafb;
+h5 {
+  color: #000;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.email,
+.pswd {
+  display: flex;
+  flex-direction: column;
+  margin: 2.2%;
+}
+.email label {
+  color: #000;
+  padding-bottom: 5px;
+}
+.pswd label {
+  color: #000;
+  padding-bottom: 5px;
+}
+
+.email,
+input {
+  width: 95%;
+  padding: 1%;
+}
+.pswd,
+input {
+  width: 95%;
+  padding: 1%;
+  border: none;
+  color: #000;
+}
+
+input {
+  border-bottom: 2px solid #000;
+  background-color: #f5e2e9;
+}
+
+.LoginForm button {
+  color: #ffffff;
+  width: 90%;
+  margin-top: 3%;
+  padding: 5px;
+  margin-left: 10px;
+  background-color: #63122f;
+  font-size: 17px;
+  font-weight: 800;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px #e52e71;
+}
+.LoginForm button:hover {
+  cursor: pointer;
+  background: linear-gradient(#e53, #e52e71);
+}
+
+.NewForgot {
+  padding: 0;
+}
+
+.NewForgot p {
+  font-size: 14px;
+  color: #000;
+}
+
+.NewForgot p a {
+  color: #63122f;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.NewForgot p a:hover {
+  color: #000;
+}
+
+/*SignUp*/
+
+.formSignUp {
+  width: 60%;
+  margin-left: 20%;
+  border: 2px solid #fff;
+  padding: 1%;
+  margin-top: 1%;
+  backdrop-filter: blur(25%);
+  box-shadow: 2px 2px 4px #000;
+}
+
+.formSignUp,
+h2,
+h5 {
+  text-align: center;
+}
+
+.personalInfo {
+  display: flex;
+  padding: 2% 0;
+}
+
+.input1,
+.input2 {
+  flex: 0 0 35%;
+  margin: 0 10px;
+}
+.input3 {
+  flex: 0 0 17%;
+  margin: 0 10px;
+}
+
+.input4 {
+  flex: 0 0 60%;
+}
+.input5 {
+  flex: 0 0 30%;
+}
+
+.personal2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+.personal2 p {
+  margin: 0;
+  margin-top: 4px;
+  padding: 0;
+}
+.input5 {
+  margin-left: 10px;
+  color: #000;
+}
+.input5 option {
+  color: #000;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  padding: 2% 0;
+}
+
+.input6 {
+  margin-right: 10px;
+}
+
+.passwords {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+
+.input8 {
+  margin-right: 10px;
+}
+
+.btnSignup {
+  width: 50%;
+  padding: 2%;
+  color: #fff;
+  background-color: #63122f;
+  font-weight: 800;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.btnSignup:hover {
+  transform: translateY(5px);
+  background: linear-gradient(#e52e71, #e53);
+}
+.full-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.input10 {
+  flex: 0 0 10%;
+  font-size: 5px;
+  margin-bottom: 2%;
+}
+
+.full-box label a {
+  text-decoration: underline;
+  font-weight: 700;
+}
+.full-box label a:hover {
+  color: #000;
+}
+
+.input1,
+.input2,
+.input3,
+.input4,
+.input5,
+.input6,
+.input7,
+.input8,
+.input9 {
+  border-radius: 7px;
 }
